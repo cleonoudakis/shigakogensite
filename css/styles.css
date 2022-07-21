@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Hakusyu";
+    src: url("fonts/HakusyuGyosyo.ttf");
+}
+
+body {
+    font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝",YuMincho,"HG明朝E","メイリオ",Meiryo,Roboto,"Droid Sans",Osaka,"ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    text-rendering: optimizeLegibility;
+}
+
+.en {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-left {
+    background-image: url("../img/123b34e1-eb08-4880-89e4-0917fa05f729.png");
+    background-size: cover;
+}
+
+.bg-right {
+    background-image: url("../img/993b47cc-8367-4e26-81a0-c4aa3a09617c.png");
+    background-size: cover;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.jah {
+    font-family: "Hakusyu";
+    letter-spacing: 2rem;
+}
+
+.stroke1-2 {
+    text-shadow:
+        -2px -2px 1px #000,
+         0   -2px 1px #000,
+         2px -2px 1px #000,
+         2px  0   1px #000,
+         2px  2px 1px #000,
+         0    2px 1px #000,
+        -2px  2px 1px #000,
+        -2px  0   1px #000;
+}
+
+.stroke1 {
+    text-shadow:
+        -1px -1px 0 #000,
+         0   -1px 0 #000,
+         1px -1px 0 #000,
+         1px  0   0 #000,
+         1px  1px 0 #000,
+         0    1px 0 #000,
+        -1px  1px 0 #000,
+        -1px  0   0 #000;
+}
+
+.stroke2 {
+    filter:
+        drop-shadow( 0px -1px 0.0625em #000)
+        drop-shadow( 0px  1px 0.0625em #000)
+        drop-shadow(-1px  0px 0.0625em #000)
+        drop-shadow( 1px  0px 0.0625em #000);
+}
+
+.border-left {
+    border-left: 0.25em solid white;
+}
+
+.border-right {
+    border-right: 0.25em solid white;
+}
+
+.font-size-lg {
+    font-size: calc(2rem + 1.5vw);
+}
+
+.col-0.slide {
+    animation: slide ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    100% {
+        right: -100px;
+        opacity: 0;
+    }
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
