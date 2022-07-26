@@ -20,9 +20,9 @@
         <title>会社概要 - 玉村本店</title>
     </head>
     <body style="background: #ADB2B0;">
-        <nav class="navbar navbar-expand-xl navbar-dark sticky-top py-3" style="background-color: #161c10">
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-top py-3">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/UI/logo.png" height="30px" /></a>
+                <a class="navbar-brand" href="javascript:void(0)"><img src="img/UI/logo.png" height="30px" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +30,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#">玉村本店について</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">直営ビアレストラン＆バー</a></li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">商品カテゴリー</a>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">商品カテゴリー</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">清酒</a></li>
                                 <li><a class="dropdown-item" href="#">ビール</a></li>
@@ -110,6 +110,41 @@
             </div>
         </div>
     </body>
+    <footer>
+        <nav class="navbar navbar-dark sticky-bottom" style="background-color: #030B11">
+            <div class="container-fluid sticky-bottom pt-3">
+                <div class="row w-100">
+                    <div class="col-lg-5 d-lg-flex d-none text-nowrap align-items-center ps-5" style="color:#BBB;">
+                        <img id="footer-stop" src="img/footer-stop.png" style="position: relative; top: -0.5em;" />
+                        <p class="ps-3" style="font-size: 0.9rem;">
+                            飲酒は20歳を過ぎてから。飲酒運転は法律で禁止されています。<br />
+                            妊娠中や授乳期の飲酒は、胎児、乳児に悪影響を与えるおそれがあります。<br />
+                            お酒は何よりも適量です。のんだ後はリサイクル。
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-md offset-md-2 text-nowrap text-end">
+                        <ul id="footer-menu">
+                            <li>
+                                <a href="profile.html#method">お支払い方法について</a>
+                            </li>
+                            <li>
+                                <a href="profile.html#shipping">配送方法・送料について</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">特定商取引法に基づく表記</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>

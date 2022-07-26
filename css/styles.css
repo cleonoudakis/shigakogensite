@@ -3,6 +3,15 @@
     src: url("fonts/HakusyuGyosyo.ttf");
 }
 
+@font-face {
+    font-family: "Linux Libertine";
+    src: url("fonts/LinuxLibertineMono.ttf");
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
 body {
     font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝",YuMincho,"HG明朝E","メイリオ",Meiryo,Roboto,"Droid Sans",Osaka,"ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
     text-rendering: optimizeLegibility;
@@ -65,11 +74,11 @@ body {
 }
 
 .border-left {
-    border-left: 0.25em solid white;
+    border-left: 0.25em solid #FFF;
 }
 
 .border-right {
-    border-right: 0.25em solid white;
+    border-right: 0.25em solid #FFF;
 }
 
 .font-size-lg {
@@ -178,6 +187,63 @@ body {
     border: none;
 }
 
+#footer-stop {
+    filter:invert();
+}
+
+#footer-menu {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+    column-gap: 1em;
+    column-width: 150px;
+}
+
+#footer-menu a {
+    color: #DDD;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+#footer-menu a:hover {
+    text-decoration: underline;
+    color: #FFF;
+    text-underline-offset: 3px;
+}
+
+#footer-menu li {
+    margin-right: 0;
+}
+
+#privacy ol {
+    counter-reset: list;
+}
+
+#privacy ol > li {
+    list-style: none;
+    position: relative;
+}
+
+#privacy ol > li:before {
+    counter-increment: list;
+    font-family: 'Linux Libertine', 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    content: counter(list, lower-alpha) ")";
+    position: absolute;
+    left: -1.4em;
+    top: 0.2em;
+}
+
+#privacy a {
+    color: #000;
+    text-underline-offset: 3px;
+}
+
+#privacy a:hover {
+    color: #666;
+}
+
 @media (max-width: 1200px) {
     .navbar-collapse.show .dropdown-menu {
         margin-top: 0;
@@ -194,13 +260,17 @@ body {
     }
 }
 
+.navbar {
+    background-color: #030B11;
+}
+
 .navbar-collapse .dropdown-menu {
-    background: white;
+    background: #FFF;
     border: 1px solid black;
 }
 
 .navbar-collapse .dropdown-item, .navbar-collapse .dropdown-item:hover {
-    color:black;
+    color: #000;
 }
 
 .nav-link {

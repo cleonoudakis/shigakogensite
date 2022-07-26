@@ -20,10 +20,33 @@
         <title>特定商取引法に基づく表記 - 玉村本店</title>
     </head>
     <body>
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-top py-3" style="background-color: #030B11">
+            <div class="container">
+                <a class="navbar-brand" href="home.html"><img src="img/UI/logo.png" height="30px" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">玉村本店について</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">直営ビアレストラン＆バー</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">商品カテゴリー</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">清酒</a></li>
+                                <li><a class="dropdown-item" href="#">ビール</a></li>
+                                <li><a class="dropdown-item" href="#">セット・ギフト（ギフトボックス）</a></li>
+                                <li><a class="dropdown-item" href="#">グッズ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://slowbrewing.blog104.fc2.com/">醸造責任者のブログ  <i class="fa fa-clone fa-flip-horizontal" style="position:relative;bottom:2px;left:4px;font-size:x-small;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <button type="button" class="btn btn-lg btn-dark float-end" id="btn-back-to-top">
             <i class="fa fa-angle-double-up"></i>
         </button>
-        <div class="container mt-5 row-content">
+        <div class="container mt-5 row-content w-75">
             <div class="row">
                 <div class="col">
                     <h3>特定商取引法に基づく表記</h3>
@@ -186,7 +209,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5 row-content">
+        <div id="shipping" class="container mt-5 row-content w-75">
             <div class="row">
                 <div class="col">
                     <h3>配送・送料について</h3>
@@ -235,7 +258,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5 row-content">
+        <div id="method" class="container mt-5 row-content w-75">
             <div class="row">
                 <div class="col">
                     <h3>支払い方法について</h3>
@@ -313,6 +336,41 @@
             </div>
         </div>
     </body>
+    <footer>
+        <nav class="navbar navbar-dark sticky-bottom" style="background-color: #030B11">
+            <div class="container-fluid sticky-bottom pt-3">
+                <div class="row w-100">
+                    <div class="col-lg-5 d-lg-flex d-none text-nowrap align-items-center ps-5" style="color:#BBB;">
+                        <img id="footer-stop" src="img/footer-stop.png" style="position: relative; top: -0.5em;" />
+                        <p class="ps-3" style="font-size: 0.9rem;">
+                            飲酒は20歳を過ぎてから。飲酒運転は法律で禁止されています。<br />
+                            妊娠中や授乳期の飲酒は、胎児、乳児に悪影響を与えるおそれがあります。<br />
+                            お酒は何よりも適量です。のんだ後はリサイクル。
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-md offset-md-2 text-nowrap text-end">
+                        <ul id="footer-menu">
+                            <li>
+                                <a href="#method">お支払い方法について</a>
+                            </li>
+                            <li>
+                                <a href="#shipping">配送方法・送料について</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="backToTop()">特定商取引法に基づく表記</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
