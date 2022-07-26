@@ -216,16 +216,16 @@ body {
     margin-right: 0;
 }
 
-#privacy ol {
+.infoContent ol {
     counter-reset: list;
 }
 
-#privacy ol > li {
+.infoContent ol > li {
     list-style: none;
     position: relative;
 }
 
-#privacy ol > li:before {
+.infoContent ol > li:before {
     counter-increment: list;
     font-family: 'Linux Libertine', 'Courier New', Courier, monospace;
     font-size: 0.8rem;
@@ -235,12 +235,12 @@ body {
     top: 0.2em;
 }
 
-#privacy a {
+.infoContent a {
     color: #000;
     text-underline-offset: 3px;
 }
 
-#privacy a:hover {
+.infoContent a:hover {
     color: #666;
 }
 
