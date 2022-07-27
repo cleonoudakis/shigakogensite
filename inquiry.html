@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>プライバシーポリシー - 玉村本店</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-top py-3" style="background-color: #030B11">
+            <div class="container">
+                <a class="navbar-brand" href="home.html"><img src="img/UI/logo.png" height="30px" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">玉村本店について</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">直営ビアレストラン＆バー</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">商品カテゴリー</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">清酒</a></li>
+                                <li><a class="dropdown-item" href="#">ビール</a></li>
+                                <li><a class="dropdown-item" href="#">セット・ギフト（ギフトボックス）</a></li>
+                                <li><a class="dropdown-item" href="#">グッズ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://slowbrewing.blog104.fc2.com/">醸造責任者のブログ  <i class="fa fa-clone fa-flip-horizontal" style="position:relative;bottom:2px;left:4px;font-size:x-small;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-5 row-content w-50 infoContent">
+            <div class="row">
+                <div class="col">
+                    <h3>お問い合わせ</h3>
+                    <div class="bg-secondary bg-opacity-25 my-3 p-3 rounded">
+                        <p>お問い合わせなど、こちらのフォームよりお気軽にお尋ねください。</p>
+                        <p>【業務店様 へ】</p>
+                        <p>弊社とお取引をご希望される酒販店様・飲食店様の、ご相談、見積りのご依頼を受け付けております。</p>
+                        <p>見積書がお入り用の際は、「お問い合わせタイトル」の欄に【見積請求】とご記載の上、貴店の情報などをご記載していただき、お申し付け下さい。</p>
+                        <p>なお、弊社製品は【要冷蔵ビール】のため、樽生ビールのお取り扱いには、空冷式・樽令式ビールサーバーのご準備が、ボトル製品につきましては、冷蔵での保管・陳列が必須条件でございます。</p>
+                        何卒宜しくお願い申し上げます。
+                    </div>
+                    <form>
+                        <div class="row py-3">
+                            <label for="inqName" class="col-4 col-form-label text-end">お名前 （必須）</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="inqName" required />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label for="inqEmail" class="col-4 col-form-label text-end">メールアドレス （必須）</label>
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="inqEmail" required />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label for="inqTitle" class="col-4 col-form-label text-end">お問い合わせタイトル （必須）</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="inqTitle" required />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label for="inqStoreName" class="col-4 col-form-label text-end">貴店名</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="inqStoreName" />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label for="inqAddress" class="col-4 col-form-label text-end">住所</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="inqAddress" />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label for="inqProduct" class="col-4 col-form-label text-end">お取扱希望商品（樽・ボトル）および 酒販小売免許の有・無</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="inqProduct" />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label for="inqSNS" class="col-4 col-form-label text-end">ホームページ、SNSサイトなど</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="inqSNS" />
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label for="inqContent" class="col-4 col-form-label text-end">お問い合わせ内容 （必須）</label>
+                            <div class="col-8">
+                                <textarea rows="10" class="form-control" id="inqContent" required></textarea>
+                            </div>
+                        </div>
+                        <!-- Captcha Box would go here -->
+                        <div class="row py-3">
+                            <div class="col text-center">
+                                <button type="submit" value="送　信" class="btn btn-lg btn-primary">送　信</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <nav class="navbar navbar-dark sticky-bottom" style="background-color: #030B11">
+            <div class="container-fluid sticky-bottom pt-3">
+                <div class="row w-100">
+                    <div class="col-lg-5 d-lg-flex d-none text-nowrap align-items-center ps-5" style="color:#BBB;">
+                        <img id="footer-stop" src="img/footer-stop.png" height="59px" style="position: relative; top: -0.5em;" />
+                        <p class="ps-3" style="font-size: 0.9rem;">
+                            飲酒は20歳を過ぎてから。飲酒運転は法律で禁止されています。<br />
+                            妊娠中や授乳期の飲酒は、胎児、乳児に悪影響を与えるおそれがあります。<br />
+                            お酒は何よりも適量です。のんだ後はリサイクル。
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-md offset-md-2 text-nowrap text-end">
+                        <ul id="footer-menu">
+                            <li>
+                                <a href="profile.html#method">お支払い方法について</a>
+                            </li>
+                            <li>
+                                <a href="profile.html#shipping">配送方法・送料について</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">特定商取引法に基づく表記</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">お問い合わせ</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/farmshiga" target="_blank"><i class="fa fa-facebook"></i></a>&ensp;
+                                <a href="https://twitter.com/drunksnowmonkey" target="_blank"><i class="fa fa-twitter"></i></a>&ensp;
+                                <a href="https://www.instagram.com/egobrewer" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

@@ -22,12 +22,12 @@ body {
 }
 
 .bg-left {
-    background-image: url("../img/landing-left.png");
+    background-image: url("../img/landing-left.jfif");
     background-size: cover;
 }
 
 .bg-right {
-    background-image: url("../img/landing-right.png");
+    background-image: url("../img/landing-right.jfif");
     background-size: cover;
 }
 
@@ -164,31 +164,31 @@ body {
 #mainContent .nav-link.active {
     background-color: transparent;
     font-weight: bolder;
-    color: #000;
-}
-
-#mainContent .nav-link.active:hover {
-    text-decoration: none;
+    color: #FFF;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 #mainContent .nav-link {
-    color: #444;
+    color: #DDD;
     font-weight: bold;
 }
 
 #mainContent .nav-link:hover {
-    color: #000;
+    color: #FFF;
+    text-underline-offset: 3px;
 }
 
 #mainContent {
-    background-color: #ADB2B0;
-    color: #000;
+    /*background-color: #ADB2B0;*/
+    background-color: #030B11;
+    color: #FFF;
     border-radius: 0;
     border: none;
 }
 
 #footer-stop {
-    filter:invert();
+    filter: invert();
 }
 
 #footer-menu {
@@ -214,6 +214,14 @@ body {
 
 #footer-menu li {
     margin-right: 0;
+}
+
+#footer-menu a > i {
+    color: #DDD;
+}
+
+#footer-menu a > i:hover {
+    color: #FFF;
 }
 
 .infoContent ol {
