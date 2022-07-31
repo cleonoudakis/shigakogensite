@@ -187,6 +187,29 @@ body {
     border: none;
 }
 
+#mainContent a {
+    color: #DDD;
+    text-decoration: none;
+}
+
+#mainContent a:hover {
+    color: #FFF;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a.caret-right::after {
+    content: '🢒';
+    display: inline-block;
+    font-size: 1.5rem;
+    vertical-align: -0.02em;
+    margin-left: 0.255em;
+}
+
+.w-60 {
+    width: 60%!important;
+}
+
 #footer-stop {
     filter: invert();
 }
@@ -250,6 +273,26 @@ body {
 
 .infoContent a:hover {
     color: #666;
+}
+
+#engiAccordion .accordion-item, #engiAccordion .accordion-button {
+    background-color: transparent;
+    color: #FFF;
+}
+
+#engiAccordion .accordion-button:focus, #engiAccordion .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+#engiAccordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+@media (min-width: 992px) {
+    .w-lg-50 { width: 50%!important; }
+    .w-lg-60 { width: 60%!important; }
+    .w-lg-75 { width: 75%!important; }
+    .w-lg-100 { width: 100%!important; }
 }
 
 @media (max-width: 1200px) {
