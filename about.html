@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>会社概要 - 玉村本店</title>
+    </head>
+    <body style="background: #030B11;">
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-top py-3">
+            <div class="container">
+                <a class="navbar-brand" href="home.html"><img src="img/UI/logo.png" height="30px" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" id="tamamuralink" style="cursor: pointer;">玉村本店について</a></li>
+                        <li class="nav-item"><a class="nav-link" id="farmlink" style="cursor: pointer;">直営ビアレストラン＆バー</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">商品カテゴリー</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">清酒</a></li>
+                                <li><a class="dropdown-item" href="#">ビール</a></li>
+                                <li><a class="dropdown-item" href="#">セット・ギフト（ギフトボックス）</a></li>
+                                <li><a class="dropdown-item" href="#">グッズ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://slowbrewing.blog104.fc2.com/">醸造責任者のブログ  <i class="fa fa-clone fa-flip-horizontal" style="position:relative;bottom:2px;left:4px;font-size:x-small;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 ps-4 pe-0" style="border-right: 1px solid #FFF;">
+                    <ul id="aboutMenu" class="nav flex-column nav-pills sticky-top text-nowrap text-end" style="top: 74px;" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tamamurahonten">玉村本店</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#gallery">ギャラリー玉村本店</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#farmhouse">THE FARMHOUSE</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#teppa">TEPPA ROOM  志賀高原</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tamamurahonten">
+                            <div class="container w-75 row-content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="container-fluid row-content infoContent" style="font-size: 0.75rem; color: #FFF;">
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>社　名</strong>
+                                                </div>
+                                                <div class="col">
+                                                    株式会社　玉村本店
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>業務内容</strong>
+                                                </div>
+                                                <div class="col">
+                                                    清酒、ビール（発泡酒）製造 ・ 酒類小売販売 ・ 酒類卸販売
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>創　業</strong>
+                                                </div>
+                                                <div class="col">
+                                                    文化ニ年・1805年
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>代表取締役社長</strong>
+                                                </div>
+                                                <div class="col">
+                                                    佐藤 栄吾
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>所在地</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="https://www.google.co.jp/maps/search/?api=1&query=長野県下高井郡山ノ内町大字平穏1163" target="_blank" style="color:#FFF;">〒381-0401　長野県下高井郡山ノ内町大字平穏1163</a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>Tel.</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="tel:0269-33-2155" style="color:#FFF;">0269-33-2155</a><br />
+                                                    <small>※オンラインストアのお問い合わせはご遠慮ください。お問い合わせは、<a href="inquiry.html" style="color:#FFF;">お問い合わせフォーム</a>よりお願いします。</small>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>Fax.</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="tel:0269-33-3136" style="color:#FFF;">0269-33-3136</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25583.846516929956!2d138.419246!3d36.723022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x348587185dc18e!2sTamamura%20Honten!5e0!3m2!1sen!2sjp!4v1659378949569!5m2!1sen!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-white">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="py-3" src="img/FH-hn5WaAAYLsD0.jfif" width="75%" />
+                                        </div>
+                                        <p>清酒『縁喜（えんぎ）』の酒蔵は、北信州は志賀高原の麓にございます。初代喜惣治が、この地に創業したのが文化ニ年（1805年）、屋号の玉村は、初代が酒造りの修行をした上州玉村（現在の群馬県佐波郡玉村町）にちなんだものです。山紫水明なこの地の清冽な水、清澄な空気、寒冷な気温の中で醸し出された酒は、約2１0年余の長きに亘り、多くの方々に愛され、育てていただいてまいりました。</p>
+                                        <p>今でこそ、スキーヤーのメッカとして全国に有名な志賀高原も、その昔は松代藩に属した未開の地であり、御用係として奥山林の調査を命ぜられた佐久間象山が、「星の井（当時の銘柄名）」の酒九樽を、氏神様（天川神社）に献上して無事を祈った程でした。その後、旧草津街道として旅人の往来も増え湯治場（湯田中・渋温泉郷）のお酒としても親しまれて参りました。<br />
+                                            明治40年には、明治天皇御用品として宮内省お買い上げを賜り、その後大正天皇御大典を機に、銘柄を「星の井」から当主喜惣治の名にちなんで「縁喜」に改めました。また、当家では、新嘗祭の献上米を大正14年に御共進した実績があり、現在はその水田で収穫された美山錦が酒造りに使用されています。</p>
+                                        <p>また、2004年からは『志賀高原ビール』『山伏』の醸造を始め、ホップなどの原料づくりからも関わっています。小規模で非効率であっても「この地だからこそできる味」「自分たちが飲みたいビール」を、楽しみながら真剣に追求しています。</p>
+                                        <p>これからも、均質化のすすむ地方の、万人受けする酒ではなく、個性ある田舎の、個性ある酒を、丹念に適正規模つくり、目の届く範囲で、責任をもってお届けしたいと思います。小さくても、味は全国トップの水準を目指し、この酒を飲むためにもここに来たいと思っていただける酒をつくることによって、地域の魅力向上に貢献して参りたいと思います。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="gallery">
+                            <div class="container w-75 row-content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="container-fluid row-conent infoContent" style="font-size: 0.75rem; color: #FFF;">
+                                            <div class="row py-3">
+                                                <div class="col">
+                                                    <h6>『酒蔵美術館 ギャラリー玉村本店』</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>所 在 地</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="https://www.google.co.jp/maps/search/?api=1&query=〒381-0401　長野県下高井郡山ノ内町大字平穏1163" target="_blank" style="color: #FFF;">〒381-0401　長野県下高井郡山ノ内町大字平穏1163</a><br /><small>長電バス：沓野停留所から徒歩約１分</small>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>Tel.</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="tel:0269-33-2155" style="color: #FFF;">0269-33-2155</a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col">
+                                                    ※団体様に対応できるお手洗い等の設備がございません。<br />
+                                                    誠に恐縮ですが、大型バス・観光バス等でのご来店はお断りする場合がございます。
+                                                </div>
+                                            </div>
+                                            <div class="row py-3" style="border: none;">
+                                                <div class="col">
+                                                    <strong>営 業 時 間</strong>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="border: none;">
+                                                <div class="col-5">
+                                                    <p><strong>月曜 &ndash; 土曜日</strong></p>
+                                                    <p><strong>日曜日</strong></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p> 9:00 &ndash; 17:30</p>
+                                                    <p>定休日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col pb-1">
+                                                    <strong class="text-danger">＊予告なく営業時間などが変更になる場合がございます。</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.5851148400984!2d138.43200819999998!3d36.7325242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601df48244ebb897%3A0xb2f02882369557f9!2s1163%20Hirao%2C%20Yamanochi%2C%20Shimotakai%20District%2C%20Nagano%20381-0401%2C%20Japan!5e0!3m2!1sen!2sus!4v1659409998549!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-white">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="py-3" src="img/EkxH--mVMAUa9Fd.jfif" width="75%" />
+                                        </div>
+                                        <p><strong>日本画を中心としたアート・ギャラリー。<br />
+                                            清酒 縁喜、志賀高原ビール、山伏、<br />
+                                            そしてグラスやグッズの販売も行っております。</strong></p>
+                                        <p class="text-danger ps-5">＊2020年4月22日より、ウイルス感染拡大を受け、清酒の試飲は行っておりません。<br />
+                                            また、樽生ビールの有料試飲は１種類のみ、お持ち帰りカップにて提供しております。<br />
+                                            ご理解いただけますと幸いです。</p>
+                                        <p>約150年前に建築された酒蔵の一部を改良し、アート・ギャラリーとして、日本画を中心とした玉村本店当主佐藤家代々のコレクションを展示しています。この地は、戦前から風光明媚なこともあり横山大観等が画室を構えたり、白州次郎・正子といった人々が保養に訪れたりした場所でした。展示している作品のほとんどは、伊藤深水、福田平八郎、山口華楊、上村松篁など、酒が縁で当地を訪れた作家のものです。</p>
+                                        <p>これからも、この静かで、ささやかなギャラリーが、様々な方の交流の場になっていけばうれしいく、酒を通じて地域の文化に貢献できたらと思っています。<br />
+                                            ぜひ、お立ち寄りください。</p>
+                                        <p>会長　佐藤 喜惣治（七代）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="farmhouse">
+                            <div class="container w-75 row-content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="container-fluid row-content infoContent" style="font-size: 0.75rem; color: #FFF;">
+                                            <div class="row py-3">
+                                                <div class="col">
+                                                    <h6>『THE FARMHOUSE by TAMAMURA HONTEN』</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>所 在 地</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="https://www.google.co.jp/maps/search/?api=1&query=〒381- 0401 長野県下高井郡山ノ内町平穏1403-2" target="_blank" style="color: #FFF;">〒381- 0401 長野県下高井郡山ノ内町平穏1403-2 (旧志賀山文庫）</a><br /><small>長電バス：スノーモンキーパーク停留所から徒歩約5分</small>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>Tel.</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="tel:0269-38-1630" style="color: #FFF;">0269-38-1630</a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3" style="border: none;">
+                                                <div class="col">
+                                                    <strong>営業スケジュール </strong>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="border: none;">
+                                                <div class="col-5">
+                                                    <p><strong>月曜</strong></p>
+                                                    <p><strong>火曜</strong></p>
+                                                    <p><strong>水曜 &ndash; 日曜</strong></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p>定休日</p>
+                                                    <p>12:00 &ndash; 15:30(15:00 LO) <small>※ランチ営業のみ</small></p>
+                                                    <p>12:00 &ndash; 15:30(15:00 LO)<br />17:00 &ndash; 21:00(20:00 LO)</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col pb-1">
+                                                    <strong>※月曜日が祝日の場合、翌日火曜日が店休となります。</strong><br />
+                                                    <strong class="text-danger">※予告なく営業時間などが変更になる場合がございます。</strong>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>ウェブサイト</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="https://www.facebook.com/farmshiga" target="_blank" style="color: #FFF;">Facebook / THE FARMHOUSE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.7126601883074!2d138.4417724!3d36.7294616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601df481d75ec31f%3A0xbbdf0c8b55b18096!2sThe%20Farmhouse!5e0!3m2!1sen!2sus!4v1659380817814!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-white">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="py-3" src="img/E3RfKDWVoAYlpSI.jfif" width="75%;" />
+                                        </div>
+                                        <p><strong>新たな「ご縁」を「喜ぶ」場所に。<br />
+                                        蔵元からも程近い上林温泉に、玉村本店直営のバー&レストランです。</strong></p>
+                                        <p><strong>志賀高原ビールが樽生で最大13種類、<br />
+                                            時にはレア物ビールと出会えることも！ <br />
+                                            ビールや清酒縁喜はもちろん、食にも、コーヒーにもこだわった、<br />
+                                            美味しいものとの出会いが満載です。</strong></p>
+                                        <p>THE FARMHOUSE のある上林（かんばやし）温泉は、スノーモンキーで有名な地獄谷野猿公園の入り口にも程近く、玉村本店から車で数分、歩いても15-20分程です。</p>
+                                        <p>建物は、あの渋沢栄一の孫、信雄氏が昭和13年に東京の目黒に建てた洋風建築を移築したもので、広い庭の木々や草花に囲まれた緑豊かな空間は、ちょっとしたリゾートに来たような心地よさがある場所です。秋になると見事な紅葉に彩られ、栗の木をふんだんにつかった洋館に差し込む光は柔らかく、ゆったりした気持ちにさせてくれます。</p>
+                                        <p>ビアバーですがしっかりと食事もして頂けます。地元の食材を生かし、和、洋がミックスされた、ビールによく合うメニューを揃えています。カフェとしてもご利用頂けるように、週替わりのランチメニューや、本格的なエスプレッソマシンを導入しコーヒーにもこだわっています。</p>
+                                        <p>おみやげに、ご自宅用に、志賀高原ビールや山伏のボトル販売もいたしております。<br />
+                                            お子様連れでも安心なファミリールームあり。</p>
+                                        <p>ご宴会・貸切のご予約やご相談など、お気軽にどうぞ！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="teppa">
+                            <div class="container w-75 row-content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="container-fluid row-content infoContent" style="font-size: 0.75rem; color: #FFF;">
+                                            <div class="row py-3">
+                                                <div class="col">
+                                                    <h6>『TEPPA ROOM 志賀高原』</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>所 在 地</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="https://www.google.co.jp/maps/search/?api=1&query=〒381-0401 長野県下高井郡山ノ内町志賀高原一の瀬 シャレ―志賀１Ｆ" target="_blank" style="color: #FFF;">〒381-0401 長野県下高井郡山ノ内町志賀高原一の瀬 シャレ―志賀１Ｆ</a><br /><small>長電バス：一の瀬スキー場停留所から徒歩約1分</small>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>Tel.</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="tel:090-1737-2155" style="color: #FFF;">090-1737-2155</a>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3" style="border: none;">
+                                                <div class="col">
+                                                    <strong> 営業スケジュール</strong>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="border: none;">
+                                                <div class="col-5">
+                                                    <p><strong>月曜</strong></p>
+                                                    <p><strong>火曜 &ndash; 金曜 </strong></p>
+                                                    <p><strong>土曜・日曜</strong></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p>定休日</p>
+                                                    <p>16:00 &ndash; 21:00</p>
+                                                    <p>11:30 &ndash; 15:00<br />17:00 &ndash; 21:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col pb-1">
+                                                    <strong>※月曜日が祝日の場合、翌日火曜日が店休となります。</strong><br />
+                                                    <strong class="text-danger">※予告なく営業時間などが変更になる場合がございます。</strong>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-5">
+                                                    <strong>ウェブサイト</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="https://www.facebook.com/teppashiga/" target="_blank" style="color: #FFF;">Facebook / Teppa Room志賀高原</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12790.816970272721!2d138.49467053638296!3d36.729663729408685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601df0261f87407d%3A0x8fe9ebbcd6eb41b3!2sChalet%20Shiga!5e0!3m2!1sen!2sus!4v1659411633198!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-white">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="py-3" src="img/FIDUmA2aUAAefzp.jfif" width="75%" />
+                                        </div>
+                                        <p><strong class="text-danger">※2021-2022シーズンは終了致しました。今シーズンもありがとうございました！</strong></p>
+                                        <p><strong>冬季限定！<br />
+                                            志賀高原一の瀬スキーエリアの「ホテルシャレー志賀1階」で、<br />
+                                            工場直送の新鮮な志賀高原ビールの樽生8種類と <br />
+                                            ボトルビールがお楽しみいただけます。</strong></p>
+                                        <p>玉村本店直営ビアパブならではの、樽生ビールの贅沢なラインナップ。<br />
+                                            ビールがすすむフードメニューに、TRUNK COFFEEやデザートも多数充実！</p>
+                                        <p>冬季限定オープン。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <nav class="navbar navbar-dark sticky-bottom" style="background-color: #030B11">
+            <div class="container-fluid sticky-bottom pt-3">
+                <div class="row w-100">
+                    <div class="col-lg-5 d-lg-flex d-none text-nowrap align-items-center ps-5" style="color:#BBB;">
+                        <img id="footer-stop" src="img/footer-stop.png" height="59px" style="position: relative; top: -0.5em;" />
+                        <p class="ps-3" style="font-size: 0.9rem;">
+                            飲酒は20歳を過ぎてから。飲酒運転は法律で禁止されています。<br />
+                            妊娠中や授乳期の飲酒は、胎児、乳児に悪影響を与えるおそれがあります。<br />
+                            お酒は何よりも適量です。のんだ後はリサイクル。
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-md offset-md-2 text-nowrap text-end">
+                        <ul id="footer-menu">
+                            <li>
+                                <a href="profile.html#method">お支払い方法について</a>
+                            </li>
+                            <li>
+                                <a href="profile.html#shipping">配送方法・送料について</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">特定商取引法に基づく表記</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="inquiry.html">お問い合わせ</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/farmshiga" target="_blank"><i class="fa fa-facebook"></i></a>&ensp;
+                                <a href="https://twitter.com/drunksnowmonkey" target="_blank"><i class="fa fa-twitter"></i></a>&ensp;
+                                <a href="https://www.instagram.com/egobrewer" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('#tamamuralink').click(e => {
+                let triggerEl = document.querySelector('#aboutMenu a[href="#tamamurahonten"]');
+                triggerEl.click();
+                triggerEl.blur();
+            })
+
+            $('#farmlink').click(e => {
+                let triggerEl = document.querySelector('#aboutMenu a[href="#farmhouse"]');
+                triggerEl.click();
+                triggerEl.blur();
+            })
+
+            let hash = window.location.hash;
+            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+            $('ul.nav a[href="' + hash + '"]').blur();
+
+            $('.nav-tabs a').click(function (e) {
+                $(this).tab('show');
+                let scrollmem = $('body').scrollTop() || $('html').scrollTop();
+                window.location.hash = this.hash;
+                $('html,body').scrollTop(scrollmem);
+            });
+        })
+    </script>
+</html>
