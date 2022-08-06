@@ -206,6 +206,17 @@ a.caret-right::after {
     margin-left: 0.255em;
 }
 
+.slide-nav-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #DDD;
+    font-size: 3rem;
+}
+
+.slide-nav-button:hover {
+    color: #FFF;
+}
+
 .w-60 {
     width: 60%!important;
 }
@@ -296,6 +307,7 @@ a.caret-right::after {
 
 #aboutMenu .nav-link {
     border-radius: 0px;
+    font-size: calc(0.25rem + 0.6vw);
 }
 
 @media (min-width: 992px) {

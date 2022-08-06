@@ -45,20 +45,26 @@
         </nav>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2 ps-4 pe-0" style="border-right: 1px solid #FFF;">
+                <div class="col-2 ps-4 pe-0 d-lg-block d-none" style="border-right: 1px solid #FFF; min-width: 170px;">
                     <ul id="aboutMenu" class="nav flex-column nav-pills sticky-top text-nowrap text-end" style="top: 74px;" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tamamurahonten">玉村本店</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#gallery">ギャラリー玉村本店</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#farmhouse">THE FARMHOUSE</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#teppa">TEPPA ROOM  志賀高原</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-slide="1" data-bs-toggle="tab" href="#tamamurahonten">玉村本店</a></li>
+                        <li class="nav-item"><a class="nav-link" data-slide="2" data-bs-toggle="tab" href="#gallery">ギャラリー玉村本店</a></li>
+                        <li class="nav-item"><a class="nav-link" data-slide="3" data-bs-toggle="tab" href="#farmhouse">THE FARMHOUSE</a></li>
+                        <li class="nav-item"><a class="nav-link" data-slide="4" data-bs-toggle="tab" href="#teppa">TEPPA ROOM  志賀高原</a></li>
                     </ul>
+                </div>
+                <div class="col-1 d-lg-none d-flex order-first justify-content-center align-items-center vh-100 sticky-top" style="margin-top: -74px; padding-top: 74px;">
+                    <a class="slide-nav-button" id="prev">🢐</a>
+                </div>
+                <div class="col-1 d-lg-none d-flex order-last justify-content-center align-items-center vh-100 sticky-top" style="margin-top: -74px; padding-top: 74px;">
+                    <a class="slide-nav-button" id="next">🢒</a>
                 </div>
                 <div class="col">
                     <div class="tab-content">
-                        <div class="tab-pane active" id="tamamurahonten">
+                        <div class="tab-pane active" id="tamamurahonten" data-slide="1">
                             <div class="container w-75 row-content">
-                                <div class="row">
-                                    <div class="col-6">
+                                <div class="row mb-3">
+                                    <div class="col-lg-6 col-12">
                                         <div class="container-fluid row-content infoContent" style="font-size: 0.75rem; color: #FFF;">
                                             <div class="row py-3">
                                                 <div class="col-5">
@@ -119,14 +125,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25583.846516929956!2d138.419246!3d36.723022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x348587185dc18e!2sTamamura%20Honten!5e0!3m2!1sen!2sjp!4v1659378949569!5m2!1sen!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col text-white">
-                                        <div class="d-flex justify-content-center">
-                                            <img class="py-3" src="img/FH-hn5WaAAYLsD0.jfif" width="75%" />
+                                        <div class="d-md-flex d-none justify-content-center">
+                                            <img class="pb-3" src="img/FH-hn5WaAAYLsD0.jfif" width="75%" />
                                         </div>
                                         <p>清酒『縁喜（えんぎ）』の酒蔵は、北信州は志賀高原の麓にございます。初代喜惣治が、この地に創業したのが文化ニ年（1805年）、屋号の玉村は、初代が酒造りの修行をした上州玉村（現在の群馬県佐波郡玉村町）にちなんだものです。山紫水明なこの地の清冽な水、清澄な空気、寒冷な気温の中で醸し出された酒は、約2１0年余の長きに亘り、多くの方々に愛され、育てていただいてまいりました。</p>
                                         <p>今でこそ、スキーヤーのメッカとして全国に有名な志賀高原も、その昔は松代藩に属した未開の地であり、御用係として奥山林の調査を命ぜられた佐久間象山が、「星の井（当時の銘柄名）」の酒九樽を、氏神様（天川神社）に献上して無事を祈った程でした。その後、旧草津街道として旅人の往来も増え湯治場（湯田中・渋温泉郷）のお酒としても親しまれて参りました。<br />
@@ -137,10 +143,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="gallery">
+                        <div class="tab-pane" id="gallery" data-slide="2">
                             <div class="container w-75 row-content">
-                                <div class="row">
-                                    <div class="col-6">
+                                <div class="row mb-3">
+                                    <div class="col-lg-6 col-12 col">
                                         <div class="container-fluid row-conent infoContent" style="font-size: 0.75rem; color: #FFF;">
                                             <div class="row py-3">
                                                 <div class="col">
@@ -191,14 +197,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.5851148400984!2d138.43200819999998!3d36.7325242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601df48244ebb897%3A0xb2f02882369557f9!2s1163%20Hirao%2C%20Yamanochi%2C%20Shimotakai%20District%2C%20Nagano%20381-0401%2C%20Japan!5e0!3m2!1sen!2sus!4v1659409998549!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col text-white">
-                                        <div class="d-flex justify-content-center">
-                                            <img class="py-3" src="img/EkxH--mVMAUa9Fd.jfif" width="75%" />
+                                        <div class="d-md-flex d-none justify-content-center">
+                                            <img class="pb-3" src="img/EkxH--mVMAUa9Fd.jfif" width="75%" />
                                         </div>
                                         <p><strong>日本画を中心としたアート・ギャラリー。<br />
                                             清酒 縁喜、志賀高原ビール、山伏、<br />
@@ -214,10 +220,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="farmhouse">
+                        <div class="tab-pane" id="farmhouse" data-slide="3">
                             <div class="container w-75 row-content">
-                                <div class="row">
-                                    <div class="col-6">
+                                <div class="row mb-3">
+                                    <div class="col-lg-6 col-12">
                                         <div class="container-fluid row-content infoContent" style="font-size: 0.75rem; color: #FFF;">
                                             <div class="row py-3">
                                                 <div class="col">
@@ -273,14 +279,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.7126601883074!2d138.4417724!3d36.7294616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601df481d75ec31f%3A0xbbdf0c8b55b18096!2sThe%20Farmhouse!5e0!3m2!1sen!2sus!4v1659380817814!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col text-white">
-                                        <div class="d-flex justify-content-center">
-                                            <img class="py-3" src="img/E3RfKDWVoAYlpSI.jfif" width="75%;" />
+                                        <div class="d-md-flex d-none justify-content-center">
+                                            <img class="pb-3" src="img/E3RfKDWVoAYlpSI.jfif" width="75%;" />
                                         </div>
                                         <p><strong>新たな「ご縁」を「喜ぶ」場所に。<br />
                                         蔵元からも程近い上林温泉に、玉村本店直営のバー&レストランです。</strong></p>
@@ -298,10 +304,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="teppa">
+                        <div class="tab-pane" id="teppa" data-slide="4">
                             <div class="container w-75 row-content">
-                                <div class="row">
-                                    <div class="col-6">
+                                <div class="row mb-3">
+                                    <div class="col-lg-6 col-12">
                                         <div class="container-fluid row-content infoContent" style="font-size: 0.75rem; color: #FFF;">
                                             <div class="row py-3">
                                                 <div class="col">
@@ -357,14 +363,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-3">
+                                    <div class="col-lg-6 col-12 mb-3">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12790.816970272721!2d138.49467053638296!3d36.729663729408685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601df0261f87407d%3A0x8fe9ebbcd6eb41b3!2sChalet%20Shiga!5e0!3m2!1sen!2sus!4v1659411633198!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col text-white">
-                                        <div class="d-flex justify-content-center">
-                                            <img class="py-3" src="img/FIDUmA2aUAAefzp.jfif" width="75%" />
+                                        <div class="d-md-flex d-none justify-content-center">
+                                            <img class="pb-3" src="img/FIDUmA2aUAAefzp.jfif" width="75%" />
                                         </div>
                                         <p><strong class="text-danger">※2021-2022シーズンは終了致しました。今シーズンもありがとうございました！</strong></p>
                                         <p><strong>冬季限定！<br />
@@ -444,6 +450,18 @@
             let hash = window.location.hash;
             hash && $('ul.nav a[href="' + hash + '"]').tab('show');
             $('ul.nav a[href="' + hash + '"]').blur();
+
+            $('#prev').click(e => {
+                let slide = document.querySelector('div.active').getAttribute('data-slide');
+                let prevSlide = (slide - 1 < 1) ? 4 : slide - 1;
+                $('ul.nav a[data-slide="' + prevSlide + '"]').tab('show');
+            })
+
+            $('#next').click(e => {
+                let slide = document.querySelector('div.active').getAttribute('data-slide');
+                let nextSlide = (parseInt(slide) + 1 > 4) ? 1 : parseInt(slide) + 1; 
+                $('ul.nav a[data-slide="' + nextSlide + '"]').tab('show');
+            })
 
             $('.nav-tabs a').click(function (e) {
                 $(this).tab('show');
